@@ -1,0 +1,22 @@
+# Core ML stack (pinned to the versions used for the paper results)
+torch==2.9.0
+transformers==4.57.3
+datasets==3.6.0
+accelerate==1.11.0
+deepspeed==0.16.4
+peft==0.15.2
+trl==0.9.6
+vllm==0.12.0
+huggingface-hub==0.36.0
+
+# API clients
+openai==2.9.0
+requests==2.32.5
+
+# Utilities
+numpy==1.26.4
+scikit-learn==1.7.2
+tqdm==4.67.1
+PyYAML==6.0.3
+
+# NOTE: LLaMA-Factory must be installed separately from source — see README.md.

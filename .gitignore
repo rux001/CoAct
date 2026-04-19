@@ -1,0 +1,23 @@
+# Vendored upstream (cloned separately per README)
+LLaMA-Factory/
+
+# Secrets
+.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+
+# Experiment artifacts
+output/
+logs/
+preference_pairs/
+generated_responses/
+oracle_evaluations/
+
+# Editor/OS
+.DS_Store
+.idea/
+.vscode/

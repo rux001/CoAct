@@ -1,0 +1,58 @@
+### model
+model_name_or_path: ${TRAIN_MODEL_PATH}
+trust_remote_code: true
+
+### method
+stage: dpo
+do_train: true
+finetuning_type: lora
+lora_rank: 8
+lora_alpha: 16
+lora_target: all
+
+### dataset
+dataset: ${DATASET_NAME}
+template: ${TEMPLATE}
+cutoff_len: 2048
+overwrite_cache: true
+preprocessing_num_workers: 16
+dataloader_num_workers: 0
+
+### output
+output_dir: ${OUTPUT_DIR}
+logging_steps: 20
+save_steps: 100
+plot_loss: true
+overwrite_output_dir: true
+save_only_model: false
+report_to: none
+
+### train
+per_device_train_batch_size: 4
+gradient_accumulation_steps: 1
+learning_rate: 5.0e-6
+num_train_epochs: 10.0
+lr_scheduler_type: cosine
+warmup_ratio: 0.003
+bf16: true
+ddp_timeout: 180000000
+dataloader_pin_memory: false
+gradient_checkpointing: true
+max_grad_norm: 1.0
+
+### dpo
+pref_beta: 0.5
+pref_loss: sigmoid
+pref_ftx: 1.0
+
+### eval
+eval_dataset: ${EVAL_DATASET}
+eval_strategy: steps
+per_device_eval_batch_size: 4
+eval_steps: 100
+
+### save
+save_strategy: steps
+save_total_limit: 3
+load_best_model_at_end: false
+metric_for_best_model: loss
