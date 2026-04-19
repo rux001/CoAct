@@ -71,15 +71,5 @@ CoAct/
 └── README.md
 ```
 
-## Citation
-
-```bibtex
-@inproceedings{coact_2026,
-  title     = {CoAct: Co-Active LLM Preference Learning with Human-AI Synergy},
-  author    = {Xu, Ruiyao and Parmar, Mihir and Yang, Tiankai and Hu, Zhengyu and Zhao, Yue and Ding, Kaize},
-  booktitle = {Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (ACL)},
-  year      = {2026}
-}
-```
 
 
