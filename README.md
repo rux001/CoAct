@@ -1,7 +1,6 @@
 # CoAct: Co-Active LLM Preference Learning with Human-AI Synergy
 
-Implementation for the **ACL 2026** paper
-**"CoAct: Co-Active LLM Preference Learning with Human-AI Synergy"**.
+Implementation for **"CoAct: Co-Active LLM Preference Learning with Human-AI Synergy"** (ACL 2026).
 
 ## Abstract
 
